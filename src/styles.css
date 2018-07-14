@@ -1,0 +1,22 @@
+body{
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 1200px) {
+  body {
+     }
+  .main-view{
+    width: 98%;
+    height: 100%;
+    margin-left: 1%;
+   /* background:   url("./assets/img/test.png") no-repeat 50% 0px;*/
+     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+    }
