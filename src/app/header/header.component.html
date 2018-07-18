@@ -1,9 +1,8 @@
 <header>
-  <div class="main-nav-container">
+  <div class="main-nav-container" [ngClass]="{'main-nav-container':toggle,'main-nav-container-big':!toggle}">
     <div class="nav-header">
       <ul>
-        <li><div  class="nav-block"></div></li>
-        <li><div  class="nav-toggle"></div></li>
+        <li (click)="toggleBar()"><div  class="nav-block" [ngClass]="{'nav-block':toggle,'nav-block-reflect':!toggle}"></div><div  class="nav-toggle" ></div></li>
         <li><a   class="nav-search"><i class="fa fa-search" aria-hidden="true"></i></a></li>
       </ul>
     </div>

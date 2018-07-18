@@ -1,0 +1,85 @@
+{
+  "user":"John",
+  "tasks":[
+    {
+      "title":"New website for Symu.co",
+      "countDays":5,
+      "ago":"days delays",
+      "delays":true
+    },
+    {
+      "title":"Free busness PSD Template",
+      "countDays":2,
+      "ago":"days delays",
+      "delays":true
+    },
+    {
+      "title":"New logo for JCD.pl",
+      "countDays":5,
+      "ago":"days left",
+      "delays":false
+    },
+    {
+      "title":"Free icons Set vol.3",
+      "countDays":10,
+      "ago":"days left",
+      "delays":false
+    }
+  ],
+  "messages":[
+    {
+      "author":"Nina Jones",
+      "countTime":5,
+      "ago":"minutes ago",
+      "message":"Hey You! It's me again :-) I attached new(...)",
+      "photoUrl":"assets/img/users/contacts/nina.png"
+    },
+    {
+      "author":"Nina Jones",
+      "countTime":"About 20 " ,
+      "ago":"hours ago",
+      "message":"Hey! I attached some new PSD files for(...)",
+      "photoUrl":"assets/img/users/contacts/nina.png"
+    },
+    {
+      "author":"James Smith",
+      "countTime":"2 " ,
+      "ago":"days ago",
+      "message":"Good morning, you are fired!",
+      "photoUrl":"assets/img/users/contacts/james-.jpg"
+    },
+    {
+      "author":"Nina Jones",
+      "countTime":"About 2 " ,
+      "ago":"weeks ago",
+      "message":"Hello! Could You bring mee coffe please?",
+      "photoUrl":"assets/img/users/contacts/nina.png"
+    }
+  ],
+  "activity":[
+    {
+      "object":"Nina Jones",
+      "action":"added a new project",
+      "actionTema":"Free UI Kit",
+      "activityTime":"Just now"
+    },
+    {
+      "object":"James Smith",
+      "action":"commented project",
+      "actionTema":"Free PSD Template",
+      "activityTime":"40 minutes ago"
+    },
+    {
+      "object":"Alex Clooney",
+      "action":"completed task",
+      "actionTema":"Symu Website",
+      "activityTime":"1 hour ago"
+    },
+    {
+      "object":"Alexandra",
+      "action":"added a new project",
+      "actionTema":"Free PSD (...)",
+      "activityTime":"3 hours ago"
+    }
+  ]
+}
