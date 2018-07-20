@@ -1,11 +1,15 @@
 <div class="sidebar-main" [ngClass]="{'sidebar-main':toggle,'sidebar-main-short':!toggle }">
 <div class="sidebar-header" [ngClass]="{'sidebar-header': toggle,'sidebar-header-short':!toggle}"><i><img src="../../assets/img/icons/logo.png" alt=""></i></div>
+<div class="close-menu" (click)="onCloseMenuMobile()" >
+  <div class="close-one" ></div>
+  <div class="close-two" ></div>
+</div>
   <ul>
-    <li><div class="sidebar-home sidebar-menu"> <div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/home.png" alt=""></i><label>Home</label></div></li>
-    <li><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/workflow.png" alt=""></i><label>Workflow</label></div></li>
-    <li><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/statistics.png" alt=""></i><label>Statistics</label></div></li>
-    <li><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/calendar.png" alt=""></i><label>Calendar</label></div></li>
-    <li><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/users.png" alt=""></i><label>Users</label></div></li>
-    <li><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/settings.png" alt=""></i><label>Settings</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-home sidebar-menu"> <div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/home.png" alt=""></i><label>Home</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/workflow.png" alt=""></i><label>Workflow</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/statistics.png" alt=""></i><label>Statistics</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/calendar.png" alt=""></i><label>Calendar</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/users.png" alt=""></i><label>Users</label></div></li>
+    <li (click)="onsidebarClick()"><div class="sidebar-menu"><div class="sidebar-menu-border"></div><i><img src="../../assets/img/icons/settings.png" alt=""></i><label>Settings</label></div></li>
   </ul>
 </div>

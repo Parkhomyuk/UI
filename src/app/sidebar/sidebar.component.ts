@@ -10,12 +10,33 @@ import {Subscription} from "rxjs";
 export class SidebarComponent implements OnInit {
   subscribtion: Subscription
   toggle:Boolean=true;
+  mobToggle=false;
   constructor(private dashService: DashboardService) { }
 
   ngOnInit() {
     this.subscribtion=this.dashService.sidebarChanged.subscribe(data=>{console.log(data), this.toggle=data});
     console.log('tog'+this.toggle);
     this.toggle=this.dashService.getToggle();
+
+  }
+  onsidebarClick(){
+    if(this.dashService.toggleSidebar==true){
+
+      this.dashService.sidebarChanged.next(this.dashService.toggleSidebar=false);
+    }else{
+
+      this.dashService.sidebarChanged.next(this.dashService.toggleSidebar=true);
+    }
+  }
+  onCloseMenuMobile(){
+    if(this.dashService.toggleSidebar==true){
+
+      this.dashService.sidebarChanged.next(this.dashService.toggleSidebar=false);
+    }else{
+
+      this.dashService.sidebarChanged.next(this.dashService.toggleSidebar=true);
+    }
+    return this.mobToggle=!this.mobToggle;
 
   }
   ngOnDestroy(){

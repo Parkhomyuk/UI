@@ -3,7 +3,7 @@
   position: absolute;
   position: fixed;
   opacity: 1;
-  border: 1px solid rgba(128, 128, 128, 0.67);
+  border: 0.5px solid rgba(128, 128, 128, 0.21);
   background-color: white;
 }
 
@@ -11,7 +11,7 @@
   display: inline;
   cursor: pointer;
 }
-.nav-block,.nav-block-reflect,.nav-search{
+.nav-block,.nav-block-reflect,.nav-search, .header-logo{
   position: absolute;
 
 }
@@ -71,116 +71,14 @@
 }
 
 
-@media only screen  and (min-width: 1224px) {
-  .main-nav-container{
-    width: 83%;
-    height: 91px;
-    margin-left: 250px;
-  }
-  .nav-header{
-    line-height: 45px;
-  }
 
-  .nav-header>ul {
-    vertical-align: middle;
-
+@media only screen  and (min-width: 1224px)  {
+  .header-logo{
+    display: none;
   }
-  .nav-header ul>li{
-    margin-right: 10px;
+  .header-logo>img{
+    display: none;
   }
-  .nav-block{
-    top: 38px;
-    left: 30px;
-    width: 0; height: 0;
-    border-top: 4px solid transparent;
-    border-right: 5px solid blue;
-    border-bottom: 4px solid transparent;
-  }
-
-  .nav-search{
-    top:20px;
-    left:90px;
-  }
-  .nav-toggle{
-    height: 3px;
-    top: 41px;
-    left: 40px;
-    width: 22px;
-  }
-  .nav-toggle:before{
-    content: '';
-    top: -0.35rem;
-    width: 22px;
-    height: 3px;
-  }
-  .nav-toggle:after{
-    content: '';
-    top: 0.35rem;
-    height: 3px;
-    width: 22px;
-  }
-  .navbar-right{
-    right: 5px;
-    top:5px;
-  }
-  .navbar-right ul{
-    margin-right: 170px;
-  }
-  .navbar-right-first{
-    right: 227px;
-  }
-  .navbar-right-second{
-    right: 157px;
-  }
-  .navbar-right-third{
-    right: 108px;
-  }
-  .navbar-right-third-notice{
-    width: 15px;
-    height: 15px;
-    top: -5px;
-    left: 12px;
-    border: 1.5px solid white;
-    color: white;
-    font-size: 0.7rem;
-  }
-  .navbar-right-third-notice>p{
-    top: -10px;
-    right: 5px;
-  }
-  .navbar-right-second, .navbar-right-third{
-    top: 25px;
-    margin: 0 0px 0 50px;
-    font-size: 1.5rem;
-  }
-  .navbar-right-fourth{
-    right: 30px;
-    top: 15px;
-  }
-  .navbar-right-block{
-    top: 20px;
-    right: -15px;
-    width: 0; height: 0;
-    width: 0; height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #79849B;
-  }
-  .navbar-right-fourth img{
-    height: 45px;
-    width: 45px;
-  }
-  .navbar-right-add{
-    width: 140px;
-    height: 40px;
-    border-radius: 50px;
-    font-size: 0.8rem;
-  }
-  .navbar-right-add>i{
-    padding-right: 25px;
-  }
-   }
-@media only screen and (min-width: 768px) and (max-width: 1224px)  {
   .main-nav-container{
     width: 84%;
     height: 70px;
@@ -319,7 +217,311 @@
     padding-right: 20px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1224px)  {
+  .header-logo{
+    display: none;
+  }
+  .header-logo>img{
+    display: none;
+  }
+  .main-nav-container{
+    width: 84%;
+    height: 70px;
+    margin-left: 15%;
+    transition: 1s;
 
+  }
+  .main-nav-container-big{
+    width: 89%;
+    height: 70px;
+    margin-left: 10%;
+    transition: 1s;
+  }
+  .nav-header{
+    line-height: 45px;
+  }
+
+  .nav-header>ul {
+    vertical-align: middle;
+
+  }
+  .nav-header ul>li{
+    margin-right: 5px;
+  }
+  .nav-block{
+    top: 30px;
+    left: 20px;
+    width: 0; height: 0;
+    border-top: 4px solid transparent;
+    border-right: 5px solid blue;
+    border-bottom: 4px solid transparent;
+  }
+  .nav-block-reflect{
+    top: 30px;
+    left: 20px;
+    width: 0; height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid blue;
+    border-bottom: 4px solid transparent;
+  }
+  .nav-search{
+    top:10px;
+    left:70px;
+    font-size: 0.7rem;
+  }
+  .nav-toggle{
+    height: 2.5px;
+    top: 32px;
+    left: 32px;
+    width: 15px;
+  }
+  .nav-toggle:before{
+    content: '';
+    top: -0.35rem;
+    width: 15px;
+    height: 2.5px;
+  }
+  .nav-toggle:after{
+    content: '';
+    top: 0.35rem;
+    height: 2.5px;
+    width: 15px;
+  }
+  .navbar-right{
+    right: 5px;
+    top:-2px;
+  }
+  .navbar-right ul{
+    margin-right: 170px;
+
+  }
+  .navbar-right ul>li{
+
+  }
+  .navbar-right-first{
+    right: 180px;
+  }
+  .navbar-right-second{
+    right: 130px;
+  }
+  .navbar-right-second i{
+    font-size: 1.5rem;
+
+  }
+  .navbar-right-third{
+    right: 95px;
+
+  }
+  .navbar-right-third i{
+    font-size: 1.5rem;
+  }
+  .navbar-right-third-notice{
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: 12px;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 0.7rem;
+  }
+  .navbar-right-third-notice>p{
+    top: -10px;
+    right: 5px;
+  }
+  .navbar-right-second, .navbar-right-third{
+    top: 25px;
+    margin: 0 0px 0 50px;
+    font-size: 1.5rem;
+  }
+  .navbar-right-fourth{
+    right: 37px;
+    top: 15px;
+  }
+  .navbar-right-block{
+    top: 20px;
+    right: -15px;
+    width: 0; height: 0;
+    width: 0; height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #79849B;
+  }
+  .navbar-right-fourth img{
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+  }
+  .navbar-right-add{
+    width: 110px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  .navbar-right-add>i{
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width : 768px) and (max-width: 992px) {
+  .header-logo{
+    display: inline-block;
+  }
+  .header-logo>img{
+    display: block;
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+  }
+  .main-nav-container{
+    width: 99%;
+    height: 70px;
+    margin-left: 0;
+    transition: 1s;
+    margin-left: 0.5%;
+  }
+
+  .nav-header{
+    line-height: 45px;
+  }
+
+  .nav-header>ul {
+    vertical-align: middle;
+
+  }
+  .nav-header ul>li{
+    margin-right: 5px;
+  }
+  .nav-block{
+    top: 30px;
+    left: 20px;
+    width: 0; height: 0;
+    border-top: 4px solid transparent;
+    border-right: 5px solid blue;
+    border-bottom: 4px solid transparent;
+    display: none;
+  }
+  .nav-block-reflect{
+    top: 30px;
+    left: 20px;
+    width: 0; height: 0;
+    border-top: 4px solid transparent;
+    border-left: 5px solid blue;
+    border-bottom: 4px solid transparent;
+    display: none;
+  }
+  .nav-search{
+    top:10px;
+    left:70px;
+    font-size: 0.7rem;
+  }
+  .nav-toggle{
+    height: 3px;
+    top: 32px;
+    left: 32px;
+    width: 20px;
+  }
+  .nav-toggle:before{
+    content: '';
+    top: -0.35rem;
+    width: 20px;
+    height: 3px;
+  }
+  .nav-toggle:after{
+    content: '';
+    top: 0.35rem;
+    height: 3px;
+    width: 20px;
+  }
+  .navbar-right{
+    right: 5px;
+    top:-2px;
+  }
+  .navbar-right ul{
+    margin-right: 170px;
+
+  }
+  .navbar-right ul>li{
+
+  }
+  .navbar-right-first{
+    right: 180px;
+  }
+  .navbar-right-second{
+    right: 130px;
+  }
+  .navbar-right-second i{
+    font-size: 1.5rem;
+
+  }
+  .navbar-right-third{
+    right: 95px;
+
+  }
+  .navbar-right-third i{
+    font-size: 1.5rem;
+  }
+  .navbar-right-third-notice{
+    width: 15px;
+    height: 15px;
+    top: -5px;
+    left: 12px;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 0.7rem;
+  }
+  .navbar-right-third-notice>p{
+    top: -10px;
+    right: 5px;
+  }
+  .navbar-right-second, .navbar-right-third{
+    top: 25px;
+    margin: 0 0px 0 50px;
+    font-size: 1.5rem;
+  }
+  .navbar-right-fourth{
+    right: 37px;
+    top: 15px;
+  }
+  .navbar-right-block{
+    top: 20px;
+    right: -15px;
+    width: 0; height: 0;
+    width: 0; height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #79849B;
+  }
+  .navbar-right-fourth img{
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+  }
+  .navbar-right-add{
+    width: 110px;
+    height: 30px;
+    border-radius: 50px;
+    font-size: 0.6rem;
+    margin-top: 5px;
+  }
+  .navbar-right-add>i{
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width : 320px) {
+  .header-logo{
+    display: inline-block;
+  }
+  .header-logo>img{
+    display: block;
+    width: 10%;
+    height: auto;
+    margin-left: 50px;
+  }
+  header{
+    width: 100vw;
+  }
+
+}
 
 
 
