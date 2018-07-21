@@ -1,0 +1,22 @@
+<div class="plot">
+  <div class="title">Your Sales <button class="period-add">Period: <span>Last Year</span><i class="fa fa-angle-down" aria-hidden="true"></i></button></div>
+<div class="plot-main">
+  <div class="wrapper">
+     <div class="circle-info">
+
+        <div class="sum">{{SumSales| number}}</div>
+        <div class="sales">Sales</div>
+
+
+    </div>
+    <div class="sector" *ngFor="let sector of sales" [ngStyle]="{'transform': 'rotate('+sector.style.rotate+'deg) skew('+sector.style.skew+'deg)', 'background-color': 'rgba(0, '+ sector.style.color+', 255,1)'}"></div>
+
+
+  </div>
+  <div class="plot-legend">
+
+      <div class="legend" *ngFor="let leg of sales"><div class="legend-circle" [ngStyle]="{'background-color': 'rgba(0, '+ leg.style.color+', 255,1)'}"></div><div class="legend-name">{{leg.name}}</div></div>
+
+  </div>
+</div>
+</div>

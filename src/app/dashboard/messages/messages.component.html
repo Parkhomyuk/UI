@@ -1,0 +1,25 @@
+<div class="message-header">
+  <div class="title"><p>Messages</p></div>
+  <div class="message-info">
+    <div class="message-circle message-info-first">2</div>
+  </div>
+</div>
+<div class="messages-content">
+  <div class="messages-content-message" *ngFor="let message of messages" [ngClass]="{'current':message.current,'':!message.current}">
+    <div class="activity-title">
+    <div class="messages-circle">
+      <img [src]="message.photoUrl" alt="user">
+      </div>
+   </div>
+    <div class="content-content">
+      <div class="author">{{message.author}} <div class="time">{{message.countTime}}{{message.ago}}</div></div>
+      <div class="content-title">{{message.message}}</div>
+      <div class="content-time">
+        <i class="fa fa-reply" aria-hidden="true"></i><span></span><i class="fa fa-cog" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+

@@ -1,0 +1,229 @@
+section{
+  padding: 15px 40px 20px 34px ;
+}
+.user-name-greeting{
+  font-size: 1.2rem;
+}
+.mainContent-graf{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35vh;
+  width: auto;
+}
+.mainContent-graf-circle{
+  background-color: black;
+}
+.mainContent-graf-circle>img, .mainContent-graf-line>img{
+  width: auto;
+  height: 100%;
+}
+.mainContent-graf-circle{
+  width: 38%;
+  text-align: center;
+  /*background:url("../../assets/img/charts/sales.png") no-repeat 50% 0px;*/
+  border: 0.5px solid rgba(128, 128, 128, 0.21);
+  background-color: white;
+  /*-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;*/
+  background-size: 70%;
+}
+.mainContent-graf-line{
+  width: 59%;
+  text-align: center;
+  /*background:url("../../assets/img/charts/report.png") no-repeat 50% 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;*/
+  background-color: white;
+  border: 0.5px solid rgba(128, 128, 128, 0.21);
+}
+.mainContent-activeZone{
+  margin-top: 25px;
+  height: 20vh;
+  opacity: 0.7;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.activeZone-tasks{
+  width: 27%;
+  height: 100%;
+}
+.activeZone-messages{
+  width: 27%;
+}
+.activeZone-activity{
+  width: 27%;
+}
+
+@media only screen  and (min-width: 1224px){
+section{
+  margin-left: 15%;
+  margin-top: 70px;
+  transition: 1s;
+}
+  .section{
+    margin-left: 10%;
+    transition: 1s;
+  }
+  .user-name-greeting>h1{
+    font-size: 1.7rem;
+  }
+  .activeZone-tasks{
+    width: 30%;
+    height: 100%;
+  }
+  .activeZone-messages{
+    width: 30%;
+  }
+  .activeZone-activity{
+
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1224px)  {
+  section{
+    margin-left: 15%;
+    margin-top: 70px;
+    transition: 1s;
+  }
+  .section{
+    margin-left: 10%;
+    transition: 1s;
+  }
+  .user-name-greeting>h1{
+    font-size: 1.5rem;
+  }
+  .activeZone-tasks{
+    width: 32%;
+    height: 100%;
+  }
+  .activeZone-messages{
+    width: 32%;
+  }
+  .activeZone-activity{
+    width: 32%;
+
+  }
+
+}
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  .activeZone-tasks{
+    width: 30%;
+    height: 100%;
+  }
+  .activeZone-messages{
+
+    width: 30%;
+  }
+  .activeZone-activity{
+    width: 30%;
+  }
+  section{
+    margin-left: 0%;
+    margin-top: 70px;
+    transition: 1s;
+  }
+  .section{
+    margin-left: 0%;
+    transition: 1s;
+  }
+  .user-name-greeting>h1{
+    font-size: 1.5rem;
+  }
+  .mainContent-graf{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20vh;
+    width: auto;
+  }
+  .mainContent-graf-circle>img, .mainContent-graf-line>img{
+    width:100%;
+    height: auto;
+  }
+  .mainContent-graf-circle{
+    width: 38%;
+    text-align: center;
+    border: 0.5px solid rgba(128, 128, 128, 0.21);
+    background-color: white;
+  }
+  .mainContent-graf-line{
+    width: 59%;
+    text-align: center;
+    /*background:url("../../assets/img/charts/report.png") no-repeat 50% 0px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;*/
+    background-color: white;
+    border: 0.5px solid rgba(128, 128, 128, 0.21);
+  }
+}
+@media only screen and (min-width : 320px) and (max-width: 767px){
+
+  .user-name-greeting{
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+   section{
+     padding: 0 ;
+     margin-top: 100px;
+     width: 100%;
+   }
+  .user-name-greeting{
+    width: 100vw;
+
+  }
+  .mainContent-graf{
+
+    height: auto;
+    width: 100vw;
+    padding-bottom: 50px;
+    margin-left: 0%;
+    display: block;
+    margin-left: 3vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .mainContent-graf-line>img{
+    width: 100vw;
+    height: auto;
+  }
+  .mainContent-graf-circle{
+    background:none;
+    border: 0px;
+  }
+  .mainContent-graf-line{
+    background:none;
+    border: 0px;
+  }
+  .mainContent-graf-circle>img{
+    width: 100vw;
+    height: auto;
+  }
+   .mainContent-graf{
+     width: 100%;
+     height: 50%;
+   }
+
+  .mainContent-activeZone{
+    height: 20vh;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+  }
+  .activeZone-tasks, .activeZone-messages, .activeZone-activity{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 400px;
+    margin-bottom: 2vh;
+  }
+}
+

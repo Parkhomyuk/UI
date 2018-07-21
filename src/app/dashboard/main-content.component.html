@@ -1,0 +1,25 @@
+
+<section [ngClass]="{'section':!toggle,'':toggle}">
+  <div class="user-name-greeting">
+    <h1>Hello {{user}}!</h1>
+  </div>
+
+  <div class="mainContent-graf">
+    <!--<div class="mainContent-graf-circle"><img src="../../assets/img/charts/sales.png" alt=""></div>-->
+    <div class="mainContent-graf-circle"><app-plot-circle></app-plot-circle></div>
+    <div class="mainContent-graf-line"><img src="../../assets/img/charts/report.png" alt=""></div>
+  </div>
+  <div class="mainContent-activeZone">
+
+    <div class="activeZone-tasks">
+      <app-tasks></app-tasks>
+    </div>
+    <div class="activeZone-messages">
+      <app-messages></app-messages>
+    </div>
+    <div class="activeZone-activity">
+      <app-activity></app-activity>
+    </div>
+  </div>
+</section>
+

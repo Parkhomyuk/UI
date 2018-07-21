@@ -1,0 +1,21 @@
+<div class="activity-header">
+  <div class="title"><p>Activity</p></div>
+  <div class="activity-info">
+    <div class="activity-circle activity-info-first">10</div>
+  </div>
+</div>
+<div class="activities-content">
+  <div class="activities-content-activity" *ngFor="let activity of activities; let i = index">
+    <div class="activity-title">
+      <div class="title-circle"><img [src]="activity.photoUrl" alt="user"><div class="title-def" *ngIf="i<activitiesNumber" ></div></div>
+
+    </div>
+    <div class="content-content">
+      <div class="content-title">{{activity.object}}<span></span> <span class="activity-action">{{activity.action}}</span> {{activity.actionTema}}</div>
+      <div class="content-menu">
+        <i class="fa fa-clock-o" aria-hidden="true"></i><span></span>{{activity.activityTime}}
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,25 @@
+
+<div class="tasks-header">
+  <div class="title"><p>Tasks</p></div>
+  <div class="tasks-info">
+    <div class="tasks-circle tasks-info-first">5</div>
+    <div class="tasks-circle tasks-info-second">2</div>
+  </div>
+</div>
+<div class="tasks-content">
+  <div class="tasks-content-task" *ngFor="let task of tasks">
+    <div class="task-title">
+      <div class="tasks-circle task-circle"><label>{{task.title | short}}</label></div>
+    </div>
+     <div class="task-content">
+      <div class="content-title">{{task.title}}</div>
+      <div class="content-time content-time-color" [ngClass]="{'content-time-color':task.delays}"> <i class="fa fa-clock-o" aria-hidden="true"></i>{{task.countDays}} {{task.ago}} </div>
+
+    </div>
+    <div class="content-menu">
+      <div class="content-menu-circle"> ⋮ </div>
+    </div>
+  </div>
+</div>
+
+
