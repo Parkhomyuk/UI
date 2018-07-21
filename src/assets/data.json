@@ -32,7 +32,7 @@
       "countTime":"5 ",
       "ago":"minutes ago",
       "message":"Hey You! It's me again :-) I attached new(...)",
-      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "photoUrl":"assets/img/contacts/nina.jpg",
       "current":true
     },
     {
@@ -40,7 +40,7 @@
       "countTime":"About 20 " ,
       "ago":"hours ago",
       "message":"Hey! I attached some new PSD files for(...)",
-      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "photoUrl":"assets/img/contacts/nina.jpg",
       "current":true
     },
     {
@@ -48,7 +48,7 @@
       "countTime":"2 " ,
       "ago":"days ago",
       "message":"Good morning, you are fired!",
-      "photoUrl":"assets/img/users/contacts/james-min.jpg",
+      "photoUrl":"assets/img/contacts/james-min.jpg",
       "current":false
     },
     {
@@ -56,7 +56,7 @@
       "countTime":"About 2 " ,
       "ago":"weeks ago",
       "message":"Hello! Could You bring mee coffe please?",
-      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "photoUrl":"assets/img/contacts/nina.jpg",
       "current":false
     }
   ],
@@ -66,28 +66,28 @@
       "action":"added a new project",
       "actionTema":"Free UI Kit",
       "activityTime":"Just now",
-      "photoUrl":"assets/img/users/contacts/nina.jpg"
+      "photoUrl":"assets/img/contacts/nina.jpg"
     },
     {
       "object":"James Smith",
       "action":"commented project",
       "actionTema":"Free PSD Template",
       "activityTime":"40 minutes ago",
-      "photoUrl":"assets/img/users/contacts/james-min.jpg"
+      "photoUrl":"assets/img/contacts/james-min.jpg"
     },
     {
       "object":"Alex Clooney",
       "action":"completed task",
       "actionTema":"Symu Website",
       "activityTime":"1 hour ago",
-      "photoUrl":"assets/img/users/contacts/alex.jpg"
+      "photoUrl":"assets/img/contacts/alex.jpg"
     },
     {
       "object":"Alexandra",
       "action":"added a new project",
       "actionTema":"Free PSD (...)",
       "activityTime":"3 hours ago",
-      "photoUrl":"assets/img/users/contacts/alexandra.jpg"
+      "photoUrl":"assets/img/contacts/alexandra.jpg"
     }
   ]
 }

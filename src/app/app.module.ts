@@ -10,6 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {ShortPipe} from "./pipes/shorten.pipes";
 import { MessagesComponent } from './main-content/messages/messages.component';
 import { ActivityComponent } from './main-content/activity/activity.component';
+import { PlotCircleComponent } from './main-content/plot-circle/plot-circle.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ActivityComponent } from './main-content/activity/activity.component';
     TasksComponent,
     ShortPipe,
     MessagesComponent,
-    ActivityComponent
+    ActivityComponent,
+    PlotCircleComponent
 
   ],
   imports: [
