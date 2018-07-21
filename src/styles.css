@@ -13,11 +13,11 @@ body{
     background-size: cover;
 
      }
-.main-view{
+/*.main-view{
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
+}*/
 
 

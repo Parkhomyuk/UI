@@ -465,8 +465,6 @@
     height: 20px;
     right: 20px;
     top: 25px;
-
-
   }
   .close-menu-close{
     position: absolute;
@@ -535,10 +533,10 @@
     padding-top: 0;
     background-color: #0e1a35;
     opacity: 1;
-    width: 30%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     color: white;
-    animation: slide-menu 1s;
+    animation: slide-menu-mob 1s;
   }
   .sidebar-header{
     /*height: 50px;*/
@@ -595,7 +593,7 @@
   .sidebar-main-short ul{
     padding-left: 0px;
     margin-top: 20px;
-    animation: sidb-menu 0s;
+    animation: sidb-menu-mob 1s;
   }
   .sidebar-main-short ul>li{
     cursor: pointer;
@@ -659,6 +657,10 @@
 }
 @keyframes sidb-menu {
   from {padding-left: 30px;}
+  to {padding-left: 0px;}
+}
+@keyframes sidb-menu-mob {
+  from {padding-left: 50px;}
   to {padding-left: 0px;}
 }
 @keyframes slide-menu {

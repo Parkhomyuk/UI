@@ -29,57 +29,65 @@
   "messages":[
     {
       "author":"Nina Jones",
-      "countTime":5,
+      "countTime":"5 ",
       "ago":"minutes ago",
       "message":"Hey You! It's me again :-) I attached new(...)",
-      "photoUrl":"assets/img/users/contacts/nina.png"
+      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "current":true
     },
     {
       "author":"Nina Jones",
       "countTime":"About 20 " ,
       "ago":"hours ago",
       "message":"Hey! I attached some new PSD files for(...)",
-      "photoUrl":"assets/img/users/contacts/nina.png"
+      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "current":true
     },
     {
       "author":"James Smith",
       "countTime":"2 " ,
       "ago":"days ago",
       "message":"Good morning, you are fired!",
-      "photoUrl":"assets/img/users/contacts/james-.jpg"
+      "photoUrl":"assets/img/users/contacts/james-min.jpg",
+      "current":false
     },
     {
       "author":"Nina Jones",
       "countTime":"About 2 " ,
       "ago":"weeks ago",
       "message":"Hello! Could You bring mee coffe please?",
-      "photoUrl":"assets/img/users/contacts/nina.png"
+      "photoUrl":"assets/img/users/contacts/nina.jpg",
+      "current":false
     }
   ],
-  "activity":[
+  "activites":[
     {
       "object":"Nina Jones",
       "action":"added a new project",
       "actionTema":"Free UI Kit",
-      "activityTime":"Just now"
+      "activityTime":"Just now",
+      "photoUrl":"assets/img/users/contacts/nina.jpg"
     },
     {
       "object":"James Smith",
       "action":"commented project",
       "actionTema":"Free PSD Template",
-      "activityTime":"40 minutes ago"
+      "activityTime":"40 minutes ago",
+      "photoUrl":"assets/img/users/contacts/james-min.jpg"
     },
     {
       "object":"Alex Clooney",
       "action":"completed task",
       "actionTema":"Symu Website",
-      "activityTime":"1 hour ago"
+      "activityTime":"1 hour ago",
+      "photoUrl":"assets/img/users/contacts/alex.jpg"
     },
     {
       "object":"Alexandra",
       "action":"added a new project",
       "actionTema":"Free PSD (...)",
-      "activityTime":"3 hours ago"
+      "activityTime":"3 hours ago",
+      "photoUrl":"assets/img/users/contacts/alexandra.jpg"
     }
   ]
 }
